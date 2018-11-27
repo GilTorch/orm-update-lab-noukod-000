@@ -7,5 +7,9 @@ class Student
 
   attr_accessor :name,:grade
 
+  def initialize(name=nil,grade=nil)
+    @name=name 
+    @grade=grade
+  end
 
 end
