@@ -46,4 +46,8 @@ class Student
     student=Student.new(name,grade)
     student.save
   end
+
+  def self.new_from_db(row)
+    Student.new(row[0][0],row[0][1],row[0][2])
+  end
 end
