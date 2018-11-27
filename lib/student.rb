@@ -59,7 +59,7 @@ class Student
       WHERE name=?
     SQL
 
-    row_found=DB[:conn].execute(sql,name).first
+    row=DB[:conn].execute(sql,name).first
     Student.new(row[1],row[2],row[0])
   end
 end
